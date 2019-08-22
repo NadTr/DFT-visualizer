@@ -16,7 +16,11 @@ audio {
 
 input {
   position: absolute;
-  top: 50px;
-  left: 0px;
-  color: white;
+  top: 90%;
+  left: 5%;
+  color: grey;
+  font-size: 1.1em;
+    font-weight: 500;
+    background-color: inherit;
+    display: inline-block;
 }

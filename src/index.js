@@ -15,8 +15,13 @@ cv.height = window.innerHeight;
 let ctx = cv.getContext('2d');
 
 let gradient = ctx.createLinearGradient(0, 0, cv.width, cv.height);
-gradient.addColorStop(0, '#30bf33');
-gradient.addColorStop(1, '#008ce2');
+gradient.addColorStop(0, 'red');
+gradient.addColorStop(3 / 10, 'orange');
+gradient.addColorStop( 4/ 10, 'yellow');
+gradient.addColorStop(5 / 10, 'green');
+gradient.addColorStop(6 / 10, 'blue');
+gradient.addColorStop(7 / 10, 'indigo');
+gradient.addColorStop(1, 'violet');
 ctx.fillStyle = gradient;
 
 const samplingRate = 44100;
@@ -59,8 +64,13 @@ input.addEventListener('change', async (e) => {
 		ctx = cv.getContext('2d');
 
 		gradient = ctx.createLinearGradient(0, 0, cv.width, cv.height);
-		gradient.addColorStop(0, '#30bf33');
-		gradient.addColorStop(1, '#008ce2');
+		gradient.addColorStop(0, 'red');
+		gradient.addColorStop(3 / 10, 'orange');
+		gradient.addColorStop( 4/ 10, 'yellow');
+		gradient.addColorStop(5 / 10, 'green');
+		gradient.addColorStop(6 / 10, 'blue');
+		gradient.addColorStop(7 / 10, 'indigo');
+		gradient.addColorStop(1, 'violet');
 		ctx.fillStyle = gradient;
 
     if(!playing)
